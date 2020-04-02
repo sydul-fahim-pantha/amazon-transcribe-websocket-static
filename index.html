@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <h1>
-            Real-time Audio Transcription
+            Batch Processing Audio Using Transcribe Medical
         </h1>
         <p class="small-caps">
             Using the <a href="https://aws.amazon.com/transcribe/">Amazon Transcribe</a> WebSocket API
@@ -62,13 +62,12 @@
                 </select>
             </div>
         </div>
-        <input type="file" id="myfileinput" multiple/>
-        <textarea id="transcript" placeholder="Press Start and speak into your mic" rows="5"
-            readonly="readonly"></textarea>
+        <input type="file" id="myfileinput"/>
+        <textarea id="transcript" placeholder="Press Start and speak into your mic" rows="5"></textarea>
         <div class="row">
             <div class="col">
                 <button id="start-button" class="button-xl" title="Start Transcription">
-                    <i class="fa fa-microphone"></i> Start
+                    <i class="fa fa-play"></i> Start
                 </button>
                 <button id="stop-button" class="button-xl" title="Stop Transcription" disabled="true"><i
                         class="fa fa-stop-circle"></i> Stop
